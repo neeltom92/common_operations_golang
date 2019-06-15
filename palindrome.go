@@ -1,3 +1,5 @@
+//script will check if a given input is palindrome or not
+
 package main
 
 import (
@@ -7,7 +9,7 @@ import (
 )
 
 func pal_drom(pal_word string) {
-
+        // reverse the string
 	runes := []rune(pal_word)
 	for i, j := 0, len(runes)-1; i < j; i, j = i+1, j-1 {
 		runes[i], runes[j] = runes[j], runes[i]
@@ -18,9 +20,9 @@ func pal_drom(pal_word string) {
 	rev_pal := string(runes)
 
 	if orig_pal == rev_pal {
-		fmt.Println("Palindrome")
+		fmt.Println(" String is Palindrome")
 	} else {
-		fmt.Println("Not Palindome")
+		fmt.Println("String is Not Palindome")
 	}
 
 }
