@@ -10,7 +10,7 @@ import (
 var j int
 
 func main() {
-  j=0
+	j = 0
 
 	file, err := os.Open("PATH_TO_THE_FILE/wordcount-1.txt")
 	_ = err
@@ -21,13 +21,11 @@ func main() {
 	for scanner.Scan() {
 
 		log_file := scanner.Text()
-    st1 := strings.Split(log_file, " ")
-    j=j+len(st1)
-
+		st1 := strings.Split(log_file, " ")
+		j = j + len(st1)
 
 	}
 
-fmt.Println(j)
-
+	fmt.Println(j)
 
 }
