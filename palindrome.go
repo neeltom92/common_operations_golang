@@ -1,5 +1,5 @@
 //script will check if a given input is palindrome or not
-
+// author : Neel 
 package main
 
 import (
